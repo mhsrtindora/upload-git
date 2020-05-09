@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formalário</title>
+</head>
+
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <p>Olá, Mundo! Hoje vou fazer um formulário em HTML.</p>
+
+    <div>
+        <form action="processa.php" method="POST"> <!--O action serve pra mostrar qual página vai processar as informações contidas no formulário, e o method é pra setar o método a ser utilizado. Usar sempre o post :) -->
+            <label>Nome do usuário</label>
+            <br>            
+            <input type="text" name="nomeUsuario" placeholder="Insira aqui seu nome">
+            <br>
+            
+            <label>Idade</label>
+            <br>
+            <input type="number" name="idadeUsuario" placeholder="Insira aqui sua idade">
+            <br>
+            
+            <label>Senha</label>
+            <br>
+            <input type="password" name="senhaUsuario" placeholder="Insira aqui sua senha">
+            <br>
+
+            <label>Seleção de Opções</label>
+            <br>
+            <select name="selecao">
+                <option value="1">Médico</option>
+                <option value="2">Paciente</option>
+            </select>
+            <br>
+
+            <label>Radios</label>
+            <br>
+            <input type="radio" name="Radio1" value="1">Cliente
+            <br>
+            <input type="radio" name="Radio1" value="2">Vendedor
+            <br>
+
+            <label>Checkbox</label>
+            <br>
+            <input type="checkbox" name="checkbox1" value="1"> Opção 1
+            <br>
+            <input type="checkbox" name="checkbox1" value="2"> Opção 2
+            <br>
+            <input type="checkbox" name="checkbox1" value="3"> Opção 3
+            <br>
+
+            <input type="submit" value="Enviar" name="submit">
+            <br>
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>
